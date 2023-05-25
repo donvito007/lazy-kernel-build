@@ -1,39 +1,39 @@
 #! /bin/bash
 
 # Kernel Repo
-KERNEL_REPO=https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/fajar4561/Kernel_Asus_SDM660
+KERNEL_REPO=https://github.com/donvito007/android_kernel_xiaomi_thyme
 
 # Kernel Branch
-KERNEL_BRANCH=R3
+KERNEL_BRANCH=main
 
 # The name of the device for which the kernel is built
-MODEL="Asus Zenfone Max Pro M1"
+MODEL="Xiaomi Mi 10S"
 
 # The codename of the device
-DEVICE="X00TD"
+DEVICE="thyme"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=X00TD_defconfig
+DEFCONFIG=thyme_defconfig
 
 # Show manufacturer info
-MANUFACTURERINFO="ASUSTek Computer Inc."
+MANUFACTURERINFO="Xiaomi Inc."
 
 # tambahkan changelog di anykernel
 CHANGELOGS=n
 
 # opsi spectrum "y" atau "n"
-SPECTRUM=y
+#SPECTRUM=n
 
 # Kernel Variant
 
-HMP=n
+#HMP=n
 
-NAMA=Signature
+#NAMA=Signature
 
-JENIS=IV
+#JENIS=IV
 
-VARIAN=r3
+#VARIAN=r3
 
 # Build Type
 BUILD_TYPE="Nightly"
@@ -43,10 +43,10 @@ BUILD_TYPE="Nightly"
 COMPILER=gcc49
 
 # Message on anykernel when installatio
-MESSAGE="just flash and forget"
+MESSAGE="by donVito007"
 
 # KBUILD ENV
-K_USER=Thoreck
+K_USER=donVito007
 K_HOST=Github
 K_VERSION=1
 
