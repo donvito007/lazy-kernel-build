@@ -1,20 +1,20 @@
 #! /bin/bash
 
 # Kernel Repo
-KERNEL_REPO=https://github.com/donvito007/android_kernel_xiaomi_thyme
+KERNEL_REPO=https://github.com/donvito007/android_kernel_xiaomi_Sirius
 
 # Kernel Branch
-KERNEL_BRANCH=main
+KERNEL_BRANCH=kernelsu
 
 # The name of the device for which the kernel is built
-MODEL="Xiaomi Mi 10S"
+MODEL="Xiaomi Mi 8 SE"
 
 # The codename of the device
-DEVICE="thyme"
+DEVICE="sirius"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=thyme_defconfig
+DEFCONFIG=xiaomi/sdm710-common.config
 
 # Show manufacturer info
 MANUFACTURERINFO="Xiaomi Inc."
@@ -40,7 +40,7 @@ BUILD_TYPE="Nightly"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc' or 'gcc49' , 'linaro & 'gcc2', clang2
-COMPILER=gcc49
+COMPILER=clang
 
 # Message on anykernel when installatio
 MESSAGE="by donVito007"
