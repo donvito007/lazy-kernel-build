@@ -311,13 +311,13 @@ tg_send_files(){
 <b>Zip Name</b>
 - <code>$ZIP_RELEASE</code>"
 
-        curl --progress-bar -F document=@"$KernelFiles" "https://api.telegram.org/bot$TOKEN/sendDocument" \
-        -F chat_id="$CHATID"  \
-        -F "disable_web_page_preview=true" \
-        -F "parse_mode=html" \
-        -F caption="$MSG"
+  #      curl --progress-bar -F document=@"$KernelFiles" "https://api.telegram.org/bot$TOKEN/sendDocument" \
+  #      -F chat_id="$CHATID"  \
+  #      -F "disable_web_page_preview=true" \
+  #      -F "parse_mode=html" \
+  #      -F caption="$MSG"
 
-			tg_send_sticker "$SID"
+  #			tg_send_sticker "$SID"
 }
 
 ##----------------------------------------------------------##
@@ -477,11 +477,11 @@ gen_zip() {
 	## Prepare a final zip variable
 	ZIP_FINAL="$ZIPNAME"
 	
-	curl --progress-bar -F document=@"$ZIPNAME" "https://api.telegram.org/bot$TOKEN/sendDocument" \
-        -F chat_id="$CHATID"  \
-        -F "disable_web_page_preview=true" \
-        -F "parse_mode=html" \
-        -F caption="✅ <b>Build Done</b>
+	#curl --progress-bar -F document=@"$ZIPNAME" "https://api.telegram.org/bot$TOKEN/sendDocument" \
+        #-F chat_id="$CHATID"  \
+        #-F "disable_web_page_preview=true" \
+        #-F "parse_mode=html" \
+        #-F caption="✅ <b>Build Done</b>
         - <code>$((DIFF / 60)) minute(s) $((DIFF % 60)) second(s) </code>
         
         📅 <b>Date</b>
