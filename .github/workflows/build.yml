@@ -1,8 +1,15 @@
 name: Lazy Kernel Builder
 
 on:
-  push:
+  watch:
+    types: [started]
 
+  workflow_dispatch:
+     inputs:
+      KERNEL_SOURCE:
+        description: 'Kernel Source'
+        required: true
+        default: 'https://github.com/blue-toxic/kernel_xiaomi_gauguin'
 jobs:
   super-job:
       runs-on: ubuntu-20.04
