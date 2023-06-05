@@ -1,20 +1,20 @@
 #! /bin/bash
 
 # Kernel Repo
-KERNEL_REPO=https://github.com/donvito007/android_kernel_xiaomi_Sirius
+KERNEL_REPO=https://github.com/donvito007/kernel_xiaomi_gauguin-perf
 
 # Kernel Branch
-KERNEL_BRANCH=kernelsu
+KERNEL_BRANCH=main
 
 # The name of the device for which the kernel is built
-MODEL="Xiaomi Mi 8 SE"
+MODEL="Xiaomi Redmi Note 9 Pro 5G"
 
 # The codename of the device
-DEVICE="sirius"
+DEVICE="gauguin"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=xiaomi/sdm710-common.config
+DEFCONFIG=vendor/gauguin_user_defconfig
 
 # Show manufacturer info
 MANUFACTURERINFO="Xiaomi Inc."
@@ -36,7 +36,7 @@ CHANGELOGS=n
 #VARIAN=r3
 
 # Build Type
-BUILD_TYPE="Nightly"
+BUILD_TYPE="Release"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc' or 'gcc49' , 'linaro & 'gcc2', clang2
